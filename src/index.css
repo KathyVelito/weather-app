@@ -2,4 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    header {
+        @apply flex justify-between mb-10
+    }
+    h1 {
+        @apply text-5xl uppercase font-bold
+    }
+    h2 {
+        @apply text-4xl font-semibold hover:opacity-75
+    }
+    h3 {
+        @apply text-3xl font-semibold mr-2
+    }
+    aside {
+        @apply bg-[#F6F8FD] col-span-3 py-8 px-10
+    }
+    button {
+        @apply flex text-white text-base bg-[#6C5FF3] items-center rounded-lg px-4 py-3
+    }
+    li {
+        @apply py-7
+    }
+
+}
+
+@layer components {
+    .bgd {
+        @apply p-5 rounded-2xl text-white text-center hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300
+    }
+    .body {
+        @apply grid grid-cols-12 h-screen
+    }
+    .col1 {
+        @apply col-span-9 grid grid-cols-12
+    }
+    .day {
+        @apply text-2xl block
+    }
+    .daily {
+        @apply bg-white flex items-center justify-around mb-4 rounded-2xl py-7
+    }
+    .hour {
+        @apply text-sm
+    }
+    .icon {
+        @apply p-4 bg-[#85c2e6] rounded-full flex justify-between items-center
+    }
+    .iuvi {
+        @apply bg-[#F8D359] rounded-full p-4
+    }
+    .temp {
+        @apply text-[#6C5FF3] font-semibold text-xl
+    }
+    .texta {
+        @apply text-xl font-semibold mb-3
+    }
+    .uvi {
+        @apply bg-[#1D273B] flex items-center px-7 py-2 rounded-2xl
+    }
+    .uvia {
+        @apply text-white mt-3
+    }
+    .uvif {
+        @apply flex justify-center items-center mt-6 mb-1.5
+    }
+    .uvii {
+        @apply text-white text-xl font-semibold mr-4
+    }
+    .uvin {
+        @apply text-white text-xl text-center font-semibold mr-4 mb-2
+    }
+    .uvit {
+        @apply text-base text-white p-2 rounded-lg text-center box-content
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
