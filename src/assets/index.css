@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,8 +23,30 @@
     button {
         @apply flex text-white text-base bg-[#6C5FF3] items-center rounded-lg px-4 py-3
     }
+    img {
+        @apply hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300 w-24 h-24
+    }
+
     li {
-        @apply py-7
+        @apply flex justify-center py-7 
+    }
+    main {
+        @apply col-span-11 p-9
+    }
+    nav {
+        @apply bg-[#F6F8FD] col-span-1
+    }
+    p {
+        @apply font-extrabold text-lg
+    }
+    small {
+        @apply bg-white rounded-md p-1
+    }
+    span {
+        @apply text-base font-medium
+    }
+    time {
+        @apply text-base font-light block
     }
 
 }
@@ -34,8 +58,20 @@
     .body {
         @apply grid grid-cols-12 h-screen
     }
+    .card {
+        @apply grid grid-cols-3 gap-4
+    }
+    .center {
+        @apply flex justify-center
+    }
     .col1 {
         @apply col-span-9 grid grid-cols-12
+    }
+    .col6 {
+        @apply col-span-6
+    }
+    .cols {
+        @apply grid grid-cols-12
     }
     .day {
         @apply text-2xl block
@@ -46,36 +82,40 @@
     .hour {
         @apply text-sm
     }
+    .hours {
+        @apply grid grid-cols-8 gap-4 mx-4 my-5
+    }
     .icon {
         @apply p-4 bg-[#85c2e6] rounded-full flex justify-between items-center
+    }
+    .image {
+        @apply bg-[url('./images/Clouds.svg')] bg-cover col-span-4 h-80 py-10 px-7 rounded-3xl
+    }
+    .imgs {
+        @apply col-span-2 border-r ml-8
     }
     .iuvi {
         @apply bg-[#F8D359] rounded-full p-4
     }
+    .pricipal {
+        @apply flex border-b border-[#EFEFF1] pb-5 mb-5 justify-evenly items-center
+    }
     .temp {
         @apply text-[#6C5FF3] font-semibold text-xl
     }
-    .texta {
-        @apply text-xl font-semibold mb-3
+    .today {
+        @apply bg-blue-200 col-span-6 p-8 rounded-3xl
     }
     .uvi {
         @apply bg-[#1D273B] flex items-center px-7 py-2 rounded-2xl
     }
-    .uvia {
-        @apply text-white mt-3
-    }
     .uvif {
-        @apply flex justify-center items-center mt-6 mb-1.5
+        @apply flex justify-center items-center mt-6 mb-1.5 text-white text-center
     }
     .uvii {
         @apply text-white text-xl font-semibold mr-4
     }
-    .uvin {
-        @apply text-white text-xl text-center font-semibold mr-4 mb-2
-    }
     .uvit {
-        @apply text-base text-white p-2 rounded-lg text-center box-content
+        @apply p-2 rounded-lg box-content my-2
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
