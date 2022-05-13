@@ -1,9 +1,9 @@
 <template>
-  <div class="body">
-    <div class="col1">
+  <div  class="body">
+    <main>
       <nav role="navigation">
         <ul>
-          <li>
+          <li tabindex="1">
             <router-link
               to="/"
               class="bg-[#6C5FF3] inline-block p-2 rounded-md"
@@ -47,7 +47,7 @@
               </svg>
             </router-link>
           </li>
-          <li>
+          <li tabindex="2">
             <router-link to="/about">
               <svg
                 width="26"
@@ -133,7 +133,7 @@
               </svg>
             </router-link>
           </li>
-          <li>
+          <li tabindex="3">
             <router-link to="/">
               <svg
                 width="26"
@@ -173,7 +173,7 @@
               </svg>
             </router-link>
           </li>
-          <li>
+          <li tabindex="4">
             <router-link to="/">
               <svg
                 width="26"
@@ -201,7 +201,7 @@
               </svg>
             </router-link>
           </li>
-          <li>
+          <li tabindex="5">
             <router-link to="/">
               <svg
                 width="26"
@@ -231,11 +231,11 @@
           </li>
         </ul>
       </nav>  
-      <main>
-        <header>
-          <img src="../assets/images/logo.svg" alt="logo"/>
-          <h1>Weather App</h1>
-          <button role="button" tabindex="1">
+      <div class="col1">
+        <header itemscope itemtype="https://schema.org/temperature">
+          <img itemprop="logo" src="../assets/images/logo.svg" alt="logo"/>
+          <h1 itemprop="name">Weather App</h1>
+          <button role="button" tabindex="6">
             <div class="mr-3">
               <svg
                 width="24"
@@ -269,17 +269,17 @@
               :key="index">
             <div class=" flex mb-16">
               <div class="icon">
-                <img :src="`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`" alt="icon temp">
+                <img itemprop="image" :src="`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`" alt="icon temp">
               </div>
               <div class="ml-4">
-                <time class="day"> {{currentD()}} </time>
-                <time class="hour"> {{  currentH(index + 1)  }} </time>
+                <time itemprop="day" datetime="P1D" class="day" > {{currentD()}} </time>
+                <time itemprop="time" datetime="P1H" class="hour"> {{  currentH(index + 1)  }} </time>
               </div>
             </div>   
             <div class="cols mb-16">
               <div class="col6 flex">
                 <div class="mr-5">
-                  <h3 class="mb-3"> {{Math.round(data.temp)}} ºC</h3>
+                  <h3 itemprop="QualitativeValue" class="mb-3"> {{Math.round(data.temp)}} ºC</h3>
                   <span> {{data.weather[0].description}} </span>
                 </div>
                 <div>
@@ -327,10 +327,11 @@
               <p> {{ weather.main }} </p>
           </article>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <aside v-if="typeof current.weather != 'undefined'">
-      <section class="pricipal">
+      <section class="principal">
         <div>
           <h3> {{ weather.main }} </h3>
           <time datetime="202-04-DD"> {{currentDateTime()}} </time>
@@ -400,7 +401,7 @@
           </div>
         </div>
         <div>
-          <button role="button" tabindex="2" @click=" showMore ">
+          <button role="button" tabindex="7" @click=" showMore ">
             <p v-if="show === true"> See More </p>
             <p v-else > Show Less </p>
           </button>

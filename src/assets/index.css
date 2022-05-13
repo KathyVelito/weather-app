@@ -6,116 +6,116 @@
 
 @layer base {
     header {
-        @apply flex justify-between mb-10
+        @apply flex justify-between mb-10;
     }
     h1 {
-        @apply text-5xl uppercase font-bold
+        @apply text-5xl uppercase font-bold;
     }
     h2 {
-        @apply text-4xl font-semibold hover:opacity-75
+        @apply text-4xl font-semibold hover:opacity-75;
     }
     h3 {
-        @apply text-3xl font-semibold mr-2
+        @apply text-3xl font-semibold mr-2;
     }
     aside {
-        @apply bg-[#F6F8FD] col-span-3 py-8 px-10
+        @apply bg-[#F6F8FD] col-span-3 py-8 px-10;
     }
     button {
-        @apply flex text-white text-base bg-[#6C5FF3] items-center rounded-lg px-4 py-3
+        @apply flex text-white text-base bg-[#6C5FF3] items-center rounded-lg px-4 py-3;
     }
     img {
-        @apply hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300 w-24 h-24
+        @apply hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300 w-24 h-24;
     }
 
     li {
-        @apply flex justify-center py-7 
+        @apply flex justify-center py-7;
     }
     main {
-        @apply col-span-11 p-9
+        @apply col-span-9 grid grid-cols-12;
     }
     nav {
-        @apply bg-[#F6F8FD] col-span-1
+        @apply bg-[#F6F8FD] col-span-1;
     }
     p {
-        @apply font-extrabold text-lg
+        @apply font-extrabold text-lg;
     }
     small {
-        @apply bg-white rounded-md p-1
+        @apply bg-white rounded-md p-1;
     }
     span {
-        @apply text-base font-medium
+        @apply text-base font-medium;
     }
     time {
-        @apply text-base font-light block
+        @apply text-base font-light block;
     }
 
 }
 
 @layer components {
     .bgd {
-        @apply p-5 rounded-2xl text-white text-center hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300
+        @apply p-5 rounded-2xl text-white text-center hover:opacity-75 hover:scale-110 hover:-translate-y-1 hover:duration-300;
     }
     .body {
-        @apply grid grid-cols-12 h-screen
+        @apply grid grid-cols-12 h-screen;
     }
     .card {
-        @apply grid grid-cols-3 gap-4
+        @apply grid grid-cols-3 gap-4;
     }
     .center {
-        @apply flex justify-center
+        @apply flex justify-center;
     }
     .col1 {
-        @apply col-span-9 grid grid-cols-12
+        @apply col-span-11 p-9;
     }
     .col6 {
-        @apply col-span-6
+        @apply col-span-6;
     }
     .cols {
-        @apply grid grid-cols-12
+        @apply grid grid-cols-12;
     }
     .day {
-        @apply text-2xl block
+        @apply text-2xl block;
     }
     .daily {
-        @apply bg-white flex items-center justify-around mb-4 rounded-2xl py-7
+        @apply bg-white flex items-center justify-around mb-4 rounded-2xl py-7;
     }
     .hour {
-        @apply text-sm
+        @apply text-sm;
     }
     .hours {
-        @apply grid grid-cols-8 gap-4 mx-4 my-5
+        @apply grid grid-cols-8 gap-4 mx-4 my-5;
     }
     .icon {
-        @apply p-4 bg-[#85c2e6] rounded-full flex justify-between items-center
+        @apply p-4 bg-[#85c2e6] rounded-full flex justify-between items-center;
     }
     .image {
-        @apply bg-[url('./images/Clouds.svg')] bg-cover col-span-4 h-80 py-10 px-7 rounded-3xl
+        @apply bg-[url('./images/Clouds.svg')] bg-cover col-span-4 h-80 py-10 px-7 rounded-3xl;
     }
     .imgs {
-        @apply col-span-2 border-r ml-8
+        @apply col-span-2 border-r ml-8;
     }
     .iuvi {
-        @apply bg-[#F8D359] rounded-full p-4
+        @apply bg-[#F8D359] rounded-full p-4;
     }
-    .pricipal {
-        @apply flex border-b border-[#EFEFF1] pb-5 mb-5 justify-evenly items-center
+    .principal {
+        @apply flex border-b border-[#EFEFF1] pb-5 mb-5 justify-evenly items-center;
     }
     .temp {
-        @apply text-[#6C5FF3] font-semibold text-xl
+        @apply text-[#6C5FF3] font-semibold text-xl;
     }
     .today {
-        @apply bg-blue-200 col-span-6 p-8 rounded-3xl
+        @apply bg-blue-200 col-span-6 p-8 rounded-3xl;
     }
     .uvi {
-        @apply bg-[#1D273B] flex items-center px-7 py-2 rounded-2xl
+        @apply bg-[#1D273B] flex items-center px-7 py-2 rounded-2xl;
     }
     .uvif {
-        @apply flex justify-center items-center mt-6 mb-1.5 text-white text-center
+        @apply flex justify-center items-center mt-6 mb-1.5 text-white text-center;
     }
     .uvii {
-        @apply text-white text-xl font-semibold mr-4
+        @apply text-white text-xl font-semibold mr-4;
     }
     .uvit {
-        @apply p-2 rounded-lg box-content my-2
+        @apply p-2 rounded-lg box-content my-2;
     }
 }
